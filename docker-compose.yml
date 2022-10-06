@@ -9,6 +9,8 @@ services:
       - 2375
     networks:
       - jenkins_dind
+    volumes:
+      - ./jenkins:/var/jenkins_home
     environment:
       DOCKER_TLS_CERTDIR: ""
 
